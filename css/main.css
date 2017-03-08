@@ -1,12 +1,42 @@
 * {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.inline {
-  display: inline;
+.block {
+	display: block;
 }
-
-body {
-  background-color: black;
+#headerLogo {
+	width: 400px;
+	height: 100%;
+	float: left;
+}
+#headerLogo > img {
+	width: 200px;
+	height: 100%;
+	float: right;
+}
+#headerMenu {
+	height: 100%;
+	display: inline;
+}
+#headerMenuDiv {
+	text-align: center;
+	text-align: bottom;
+}
+#headerMenuDiv  > li {
+	display: inline;
+	padding: 20px;
+}
+#headerMenuDiv > li > a  {
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	font-size: 30px;
+}
+header {
+	height: 75px;
 }
