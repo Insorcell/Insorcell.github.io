@@ -1,3 +1,4 @@
+/*GLOBAL*/
 * {
 	margin: 0px;
 	border: 0px;
@@ -6,37 +7,76 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.block {
-	display: block;
+
+/*HEADER*/
+header {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background-color: #1a9be2;
 }
 #headerLogo {
-	width: 400px;
+	width: 30%;
 	height: 100%;
 	float: left;
 }
 #headerLogo > img {
-	width: 200px;
-	height: 100%;
+	width: 40px;
+	height: 40px;
 	float: right;
 }
 #headerMenu {
+	width: 70%;
 	height: 100%;
+	float: right;
 	display: inline;
 }
-#headerMenuDiv {
+#headerMenu > ul{
 	text-align: center;
-	text-align: bottom;
+	max-width: 500px;
 }
-#headerMenuDiv  > li {
+#headerMenu > ul  > li {
 	display: inline;
 	padding: 20px;
 }
-#headerMenuDiv > li > a  {
+#headerMenu > ul > li > a  {
 	text-decoration: none;
 	color: white;
 	font-family: sans-serif;
 	font-size: 30px;
 }
-header {
-	height: 75px;
+
+/*SECTION*/
+section {
+	background-color: blue;
+}
+
+/*FOOTER*/
+
+/* Everything below is for windows under 500px wide*/
+@media screen and (max-width: 500px) {
+	/*HEADER*/
+	header {
+		height: 99px;
+	}
+	#headerLogo {
+		width: 99px;
+	}
+	#headerLogo > img {
+		height: 99px;
+		width: 99px;
+	}
+	#headerMenu > ul  > li {
+		padding: 5px 0px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	#headerMenu > ul  > li > a {
+		font-size: 20px;
+	}
+	
+	/*SECTION*/
+	
+	/*FOOTER*/
 }
