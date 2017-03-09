@@ -59,6 +59,7 @@ section {
 #jumbotronIcon > img {
 	height: 100%;
 	border-radius: 20px;
+	box-shadow: 4px 4px black;
 }
 #jumbotronInfo {
 	float: right;
