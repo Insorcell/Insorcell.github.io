@@ -23,7 +23,7 @@ section {
 	background-color: #1a9be2;
 	width: 70%;
 	height: 25vw;
-	max-height: 40%;
+	max-height: 264px;
 	margin: auto;
 	border-radius: 4px;
 	border: black 1px solid;
@@ -32,23 +32,28 @@ section {
 #buttons {
 	position: absolute;
 	width: 90%;
+	margin-top: calc(25vw / 3);
 	margin-left: 5%;
-	height: 25vw;
-	max-height: 40%;
-	background-color: RGBa(0,0,0,.4);
-	visibility: hidden;
+	height: calc(25vw / 3);
+	max-height: 88px;
 }
 #buttonLeft {
 	float: left;
 	width: calc(10vw - 2px);
 	height: 100%;
+	background-color: RGBa(0,0,0,0);
+}
+#buttonLeft:hover {
+	background-color: RGBa(0,0,0,.4);
 }
 #buttonRight {
 	float: right;
 	width: calc(10vw - 2px);
 	height: 100%;
+	background-color: RGBa(0,0,0,0);
+}
+#buttonRight:hover {
 	background-color: RGBa(0,0,0,.4);
-	visibility: hidden;
 }
 #jumbotronIcon {
 	width: 25vw;
@@ -59,7 +64,6 @@ section {
 #jumbotronIcon > img {
 	height: 100%;
 	border-radius: 20px;
-	box-shadow: 4px 4px black;
 }
 #jumbotronInfo {
 	float: right;
@@ -100,7 +104,7 @@ section {
 	height: 40px;
 }
 
-/* Everything below is for windows under 500px wide*/
+/*Window 500px and below*/
 @media screen and (max-width: 500px) {	
 	/*SECTION*/
 	#jumbotron {
@@ -109,5 +113,12 @@ section {
 	}
 	#jumbotronInfo {
 		display: none;
+	}
+}
+/*Window 1056px and above*/
+@media screen and (min-width: 1056px) {
+	/*SECTION*/
+	#buttons {
+		margin-top: 88px;
 	}
 }
