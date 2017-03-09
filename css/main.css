@@ -54,7 +54,7 @@ header {
 /*SECTION*/
 section {	
 	width: 100%;
-	min-height: calc(100% - 40px - 56px);
+	min-height: 95%;
 	background-color: #4284c7;
 }
 #jumbotronSpacer {
