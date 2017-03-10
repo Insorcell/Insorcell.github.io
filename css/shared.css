@@ -1,0 +1,120 @@
+/*GLOBAL*/
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: white;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*HEADER*/
+header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #1a9be2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+}
+#headerLogo {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+#headerLogo > img {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+#headerMenu {
+    width: 70%;
+    height: 100%;
+    float: right;
+    display: inline;
+}
+#headerMenu > ul{
+    text-align: center;
+    max-width: 500px;
+}
+#headerMenu > ul  > li {
+    display: inline;
+    padding: 20px;
+}
+#headerMenu > ul > li > a  {
+    text-decoration: none;
+    font-size: 30px;
+}    
+#headerSpacer {
+    height: 40px;
+    background-color: #4284c7;
+}
+
+/*FOOTER*/
+footer {
+    height: 56px;
+    width: 100%;
+    background-color: #585858;
+}
+#footerSpace {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+#footerCopyright {
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+#footerCopyright > p {
+    margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    /*HEADER*/
+    header {
+        height: 99px;
+    }
+    #headerLogo {
+        width: 99px;
+    }
+    #headerLogo > img {
+        height: 99px;
+        width: 99px;
+    }
+    #headerMenu > ul  > li {
+        padding: 5px 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #headerMenu > ul  > li > a {
+        font-size: 20px;
+    }
+    #headerSpacer {
+        height: 99px;
+    }
+    
+    /*FOOTER*/
+    footerSpace {
+        display: none;
+    }
+    footerCopyright {
+        width: 100%;
+        text-align: center;
+    }
+    footerCopyright > p {
+        width: 100%;
+        text-align: center;
+    }
+}
