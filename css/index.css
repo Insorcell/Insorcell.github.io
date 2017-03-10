@@ -20,9 +20,9 @@ section {
 }
 #buttons {
   position: absolute;
-  width: 90%;
+  width: 80%;
   margin-top: calc(25vw / 3);
-  margin-left: 5%;
+  margin-left: 10%;
   height: calc(25vw / 3);
   max-height: 88px;
 }
