@@ -28,19 +28,20 @@ section {
 }
 #buttonLeft {
   float: left;
-  width: calc(10vw - 2px);
+  width: calc(5vw - 1px);
   height: 100%;
   background-color: RGBa(0,0,0,0);
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px
 }
 #buttonLeft:hover {
   background-color: RGBa(0,0,0,.4);
 }
 #buttonRight {
   float: right;
-  width: calc(10vw - 2px);
+  width: calc(5vw - 1px);
   height: 100%;
   background-color: RGBa(0,0,0,0);
+  border-radius: 0px 5px 5px 0px;
 }
 #buttonRight:hover {
   background-color: RGBa(0,0,0,.4);
