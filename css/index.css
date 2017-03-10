@@ -1,100 +1,89 @@
-/*GLOBAL*/
-* {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-    color: white;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /*SECTION*/
 section {    
-    width: 100%;
-    min-height: calc(100% - 40px - 56px);
-    background-color: #4284c7;
+  width: 100%;
+  min-height: calc(100% - 40px - 56px);
+  background-color: #4284c7;
 }
 #jumbotronSpacer {
-    height: 5vw;
-    max-height: 55px;
+  height: 5vw;
+  max-height: 55px;
 }
 #jumbotron {
-    background-color: #1a9be2;
-    width: 70%;
-    height: 25vw;
-    max-height: 264px;
-    margin: auto;
-    border-radius: 4px;
-    border: black 1px solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #1a9be2;
+  width: 70%;
+  height: 25vw;
+  max-height: 264px;
+  margin: auto;
+  border-radius: 4px;
+  border: black 1px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #buttons {
-    position: absolute;
-    width: 90%;
-    margin-top: calc(25vw / 3);
-    margin-left: 5%;
-    height: calc(25vw / 3);
-    max-height: 88px;
+  position: absolute;
+  width: 90%;
+  margin-top: calc(25vw / 3);
+  margin-left: 5%;
+  height: calc(25vw / 3);
+  max-height: 88px;
 }
 #buttonLeft {
-    float: left;
-    width: calc(10vw - 2px);
-    height: 100%;
-    background-color: RGBa(0,0,0,0);
+  float: left;
+  width: calc(10vw - 2px);
+  height: 100%;
+  background-color: RGBa(0,0,0,0);
+  border-radius: 5px;
 }
 #buttonLeft:hover {
-    background-color: RGBa(0,0,0,.4);
+  background-color: RGBa(0,0,0,.4);
 }
 #buttonRight {
-    float: right;
-    width: calc(10vw - 2px);
-    height: 100%;
-    background-color: RGBa(0,0,0,0);
+  float: right;
+  width: calc(10vw - 2px);
+  height: 100%;
+  background-color: RGBa(0,0,0,0);
 }
 #buttonRight:hover {
-    background-color: RGBa(0,0,0,.4);
+  background-color: RGBa(0,0,0,.4);
 }
 #jumbotronIcon {
-    width: 25vw;
-    height: 100%;
-    padding: 10px;
-    float: left;
+  width: 25vw;
+  height: 100%;
+  padding: 10px;
+  float: left;
 }
 #jumbotronIcon > img {
-    height: 100%;
-    border-radius: 20px;
+  height: 100%;
+  border-radius: 20px;
 }
 #jumbotronInfo {
-    float: right;
-    width: 40vw;
-    height: 100%;
+  float: right;
+  width: 40vw;
+  height: 100%;
 }
 #jumbotronInfo > h1 {
-    font-size: 4vw;
-    margin-bottom: 30px;
+  font-size: 4vw;
+  margin-bottom: 30px;
 }
 #jumbotronInfo > p {
-    font-size: 2.3vw;
-    padding-left: 20px;
-    padding-right: 20px;
+  font-size: 2.3vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #titleSpacer {
-    height: 5vw;
-    max-height: 55px;
+  height: 5vw;
+  max-height: 55px;
 }
 #title > h1 {
-    text-align: center;
-    font-size: 60px;
+  text-align: center;
+  font-size: 60px;
 }
 #updatesSpacer {
-    height: 15px;
+  height: 15px;
 }
 #main {
   height: 700px;
   margin: 0px 7%;
-  background-color #1a9be2;
+  background-color: #1a9be2;
   border-radius: 4px;
   border: black 1px solid;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -106,11 +95,11 @@ section {
   padding-top: 10px;
 }
 .updateSpacer {
-    height: 25px;
+  height: 25px;
 }
 #updates > h2 {
-    font-size: 30px;
-    text-decoration: underline;
+  font-size: 30px;
+  text-decoration: underline;
 }
 #updates > ul {
   list-style: none;
@@ -122,30 +111,30 @@ section {
   float: right;
 }
 #footerSpacer {
-    height: 40px;
+  height: 40px;
 }
 
 /*Window 500px and below*/
 @media screen and (max-width: 500px) {    
-    /*SECTION*/
-    #jumbotron {
-        width: 30vw;
-        height: 30vw;
-    }
-    #jumbotronInfo {
-        display: none;
-    }
+  /*SECTION*/
+  #jumbotron {
+    width: 30vw;
+    height: 30vw;
+  }
+  #jumbotronInfo {
+    display: none;
+  }
 }
 /*Window 1056px and above*/
 @media screen and (min-width: 1056px) {
-    /*SECTION*/
-    #buttons {
-        margin-top: 88px;
-    }
-    #jumbotronInfo > h1 {
-        font-size: 42.24px;
-    }
-    #jumbotronInfo > p {
-        font-size: 24.288px;
-    }
+  /*SECTION*/
+  #buttons {
+    margin-top: 88px;
+  }
+  #jumbotronInfo > h1 {
+    font-size: 42.24px;
+  }
+  #jumbotronInfo > p {
+    font-size: 24.288px;
+  }
 }
